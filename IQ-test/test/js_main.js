@@ -44,6 +44,7 @@
 
 document.getElementById('quizForm').addEventListener('submit', function (e) {
   e.preventDefault(); 
-  window.location.href = 'result.html';
+  window.location.href = 'https://tusharsavner.github.io/Standard/IQ-test/result/html_main.html';
+
 });
 
