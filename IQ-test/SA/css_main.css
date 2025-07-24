@@ -1,0 +1,186 @@
+/* Reset + Fonts */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+nav a {
+  margin-left: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px 50px;
+  background-color: #f0f6ff;
+}
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+.tagline {
+  font-size: 1.1rem;
+  color: #555;
+}
+.cta-buttons {
+  margin-top: 30px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: background 0.3s ease;
+}
+.primary {
+  background: #003366;
+  color: white;
+}
+.primary:hover {
+  background: #0054a6;
+}
+.secondary {
+  background: #eeeeee;
+  color: #222;
+}
+.secondary:hover {
+  background: #dddddd;
+}
+
+/* Info Section */
+.info {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+.info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.info ul {
+  list-style-type: none;
+  padding: 0;
+}
+.info li {
+  padding: 10px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Trust Bar */
+.trustbar {
+  background: #fff;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 1rem;
+  color: #666;
+}
+.brands {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+.footer-links {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  font-weight: 500;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+/* Extra convincing section */
+
+.proof {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.proof h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.stats div {
+  font-weight: 600;
+  color: #003366;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.science {
+  font-size: 1rem;
+  max-width: 750px;
+  margin: 0 auto 40px;
+  color: #444;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 1.05rem;
+  color: #222;
+}
+.quote {
+  background: #f4f8ff;
+  padding: 20px;
+  border-left: 4px solid #0054a6;
+  border-radius: 6px;
+}
+.quote span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
