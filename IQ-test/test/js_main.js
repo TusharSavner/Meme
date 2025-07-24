@@ -42,9 +42,7 @@
 
 }
 
-document.getElementById('quizForm').addEventListener('submit', function (e) {
-  e.preventDefault(); 
+function goToResult() {
   window.location.href = 'https://tusharsavner.github.io/Standard/IQ-test/result/html_main.html';
-
-});
+}
 
