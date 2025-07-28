@@ -6,6 +6,7 @@ let bet = 10;
 let gain = 0;
 let boxCount = 0;
 let gameActive = true; 
+let totalBet = 0;
 
 document.getElementById('bet').textContent = `Next Bet : $${bet.toFixed(2)}`;
 document.getElementById('gain').textContent = `Total Gain : $${gain.toFixed(2)}`;
@@ -25,6 +26,9 @@ function checkCollisions(newThing) {
     const allThings = document.querySelectorAll('.thing');
     for (let t of allThings) {
         if (t !== newThing && isColliding(t, newThing)) {
+            t.classList.add("collision-glow");
+            newThing.classList.add("collision-glow");
+            gameOver();
             return true;
         }
     }
@@ -48,6 +52,7 @@ function restartGame() {
     bet = 10;
     gain = 0;
     boxCount = 0;
+    totalBet = 0;
     gameActive = true;
 
     document.querySelectorAll('.thing').forEach(el => el.remove());
@@ -102,12 +107,10 @@ function spawn(e) {
         thing.style.top = `${yPos}px`;
         thing.style.left = `${xPos}px`;
 
-        if (checkCollisions(thing)) {
-            gameOver();
-            return;
-        }
+        if (checkCollisions(thing)) return;
 
         boxCount++;
+
         let payout = 0;
         if (boxCount === 1) {
             payout = 2.21; 
@@ -120,6 +123,9 @@ function spawn(e) {
 
         const lastBet = bet;
         const lastGain = payout; 
+
+        // update totals
+        totalBet += lastBet;
         bet = Math.max(0.1, bet * 0.75);
 
         document.getElementById('bet').textContent = `Next Bet : $${bet.toFixed(2)}`;
@@ -145,6 +151,7 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         document.getElementById("withdrawMessage").innerHTML = 
           `Are you sure you want to withdraw <b>$${gain.toFixed(2)}</b>?<br>
+           After betting <b>$${totalBet.toFixed(2)}</b><br>
            Your next bet would be <b>$${bet.toFixed(2)}</b>!`;
         document.getElementById("withdrawScreen").style.display = "flex";
     }
