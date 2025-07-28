@@ -10,7 +10,7 @@ let gameActive = true;
 
 document.getElementById('bet').textContent = `Next Bet : $${bet.toFixed(2)}`;
 document.getElementById('gain').textContent = `Total Gain : $${gain.toFixed(2)}`;
-document.getElementById('totalBet').textContent = `TotalBet : $${totalBet.toFixed(2)}`;
+
 
 function isColliding(div1, div2) {
     const r1 = div1.getBoundingClientRect();
