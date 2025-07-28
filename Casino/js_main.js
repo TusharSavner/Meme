@@ -7,6 +7,7 @@ let gain = 0;
 let boxCount = 0;
 let gameActive = true; 
 let totalBet = 0;
+let previousGain = 0; // <-- stores gain before last spawn
 
 document.getElementById('bet').textContent = `Next Bet : $${bet.toFixed(2)}`;
 document.getElementById('gain').textContent = `Total Gain : $${gain.toFixed(2)}`;
@@ -37,7 +38,7 @@ function checkCollisions(newThing) {
 
 function gameOver() {
     gameActive = false;
-    const lostAmount = gain; 
+    const lostAmount = previousGain; // <-- show gain before last risky move
     gain = 0;
 
     setTimeout(() => {
@@ -53,6 +54,7 @@ function restartGame() {
     gain = 0;
     boxCount = 0;
     totalBet = 0;
+    previousGain = 0;
     gameActive = true;
 
     document.querySelectorAll('.thing').forEach(el => el.remove());
@@ -94,6 +96,9 @@ window.addEventListener("DOMContentLoaded", () => {
 function spawn(e) {
     if (!gameActive) return; 
     if (e.key === ' ') {
+        // store gain before adding new payout
+        previousGain = gain;  
+
         const thing = document.createElement('div');
         thing.classList.add('thing');
         ground.appendChild(thing);
