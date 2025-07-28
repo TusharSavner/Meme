@@ -109,7 +109,7 @@ function spawn(e) {
 
         let payout = 0;
         if (boxCount === 1) {
-            payout = 5; 
+            payout = 2.21; 
             gain += payout;
         } else {
             payout = 0.45 * bet + (0.3 * boxCount);
