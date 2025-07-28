@@ -127,8 +127,8 @@ function spawn(e) {
         document.getElementById('gain').textContent = `Total Gain : $${gain.toFixed(2)}`;
         document.getElementById('totalBet').textContent = `TotalBet : $${totalBet.toFixed(2)}`;
 
-        spawnFloatingText(`$-${lastBet.toFixed(2)}`, xPos , yPos + 60, "bet");
-        spawnFloatingText(`$+${lastGain.toFixed(2)}`, xPos, yPos, "gain");
+        spawnFloatingText(`-$${lastBet.toFixed(2)}`, xPos , yPos + 60, "bet");
+        spawnFloatingText(`+$${lastGain.toFixed(2)}`, xPos, yPos, "gain");
     }
 }
 
