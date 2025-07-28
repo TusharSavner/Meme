@@ -395,3 +395,10 @@ html, body {
     from { transform: scale(1); }
     to { transform: scale(1.15); }
 }
+.thing.collision-glow {
+    box-shadow: 0 0 250px 100px gold, 0 0 50px 20px red;
+    background: linear-gradient(45deg, gold, red);
+    border: 20px solid red;
+    z-index: 20;
+    transition: all 0.3s ease;
+}
