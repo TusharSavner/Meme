@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css_main.css">
+</head>
+<body>
+    <!-- Start Screen Overlay -->
+<div id="startScreen">
+  <div class="start-content">
+    <h1>🎰 Welcome to the Medi Gamble 🎰</h1>
+    <h3 class="tagline">"Noobs get a job — Legends pay debt"</h3>
+    <p>
+      🎓 Your university thrah? Good.<br>
+      Degrees are overrated.<br><br>
+
+      At this casino, every bet is a résumé,<br>
+      every click a promotion.<br><br>
+
+      Forget 9-to-5 — chase 9-to-jackpot 💸.<br>
+      Be the legend they warn their kids about.
+    </p>
+    <button id="startButton">🎲 Become a Legend</button>
+    <p class="disclaimer">⚠️ Warning: May cause sudden confidence & instant regret.</p>
+  </div>
+</div>
+
+
+
+    <div id="container">
+        <!-- Game Area -->
+        <div id="ground">
+            <div id="gameOver">
+    <h1>💥 GAME OVER 💥</h1>
+    <img src="cat.jpg" alt="laughing_cat"/>
+    <p><span id="finalGain"></span></p>
+    
+    <div id="gameOverButtons">
+        <button onclick="restartGame()" id="restart">Restart</button>
+        <button onclick="window.location.href='https://google.com'" id="leave">Exit</button>
+    </div>
+</div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div id="stat">
+                <div id="tagline">Stats</div>
+                <p id="bet"></p>
+                <p id="gain"></p>
+                <p id="totalBet"></p>
+            </div>
+            <div id="guide">
+                <h3>📖 How to Play</h3>
+                <p>Press <em><b>Space</b> </em>to make a random box appear.</p>
+                <p>Your bet will be debited, you will gain rewards, and your next bet will be cheaper.</p>
+                <P>If any two boxes collide, your game ends and you lose your total Bet amount.</P>
+                <p>Press <em><b>Enter</b></em> to collect your payout.</p>
+                
+            </div>
+        </div>
+        <!-- Withdraw Screen -->
+<div id="withdrawScreen">
+  <div class="withdraw-content">
+    <h2>💎 Are you sure?</h2>
+    <p id="withdrawMessage"></p>
+    <img src="cover5.jpg" alt="Diamond Miner Meme" />
+    <div class="withdraw-buttons">
+      <button id="confirmWithdraw">✅ Confirm Withdraw</button>
+      <button id="continueBetting">🎲 Bet More</button>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <script src="js_main.js"></script>
+</body>
+</html>
