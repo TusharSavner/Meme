@@ -1,41 +1,44 @@
-/* Reset default margins */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-}
-
-/* Full-page container */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Main heading */
 h1 {
-    margin-bottom: 10px;
+    color: red;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    text-align: center;
+    width: 90%; /* allows resizing on smaller screens */
 }
 
-/* Subheading */
 h2 {
-    max-width: 800px;
-    line-height: 1.4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
 }
 
-/* Tablet view */
+/* Tablet adjustments */
 @media (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+        top: 20%;
+    }
     h2 {
-        max-width: 90%;
+        font-size: 16px;
+        top: 45%;
     }
 }
 
-/* Mobile view */
+/* Mobile adjustments */
 @media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        top: 18%;
+    }
     h2 {
-        max-width: 95%;
+        font-size: 14px;
+        top: 42%;
     }
 }
