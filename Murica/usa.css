@@ -1,0 +1,113 @@
+#flag {
+    position: relative;
+    top: -50px;
+    left: -25px;
+}
+#liberty {
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    width: 100px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: relative;
+}
+#liberty_img {
+    width: 30%;
+}
+#liberty_message {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+#flag_message {
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    font-size: 24px;
+}
+#freedom {
+    display: inline-block;
+    width: 50%;
+}
+#part {
+    display: flex;
+    flex-direction: row;
+}
+#q2 {
+    display: none;
+}
+#q3 {
+    display: none;
+}
+#q4 {
+    display: none;
+}
+#freedom_example {
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#q5 {
+    display: none;
+}
+#product_name, #product_date {
+    display: inline-block
+}
+#freedom2 {
+    display: none;
+    margin: 200px;
+}
+#freedom_gallery {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.freedom-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto; 
+    padding: 10px;
+}
+
+.freedom-list img {
+    height: 500px;  
+    width: 500px;
+
+}
+
+#freedom2_explanation {
+    margin-top: -100px;
+}
+#freedom_reviews {
+    width: 100%;
+    max-width: 600px; 
+    height: 250px; 
+    overflow-y: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px auto;
+    background: #f9f9f9; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 200px;
+}
+
+.review {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    margin-bottom: 8px;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review strong {
+    display: inline-block;
+    width: 80px;
+}
+

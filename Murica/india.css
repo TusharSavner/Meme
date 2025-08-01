@@ -1,0 +1,10 @@
+#error {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+#msg {
+    top: 50%;
+    position: absolute;
+}
