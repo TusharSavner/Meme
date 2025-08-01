@@ -1,0 +1,50 @@
+#fact {
+    display: none;
+}
+#entry {
+    display: none;
+}
+#four_nation {
+    display: none;
+}
+#china {
+    display: inline-block;
+}
+#unemployed {
+    display: none;
+}
+#people {
+    display: none;
+}
+#sob_story {
+    display: none;
+}
+/* Minimal mobile support - no style changes */
+
+html, body, #container {
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* padding can be adjusted as needed */
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  /* Allow inputs and buttons to shrink but keep styles */
+  input[type="text"], button, label {
+    max-width: 100%;
+    box-sizing: border-box;
+    word-break: break-word; /* prevent overflow from long text */
+  }
+}

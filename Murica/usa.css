@@ -1,0 +1,238 @@
+#flag {
+    position: relative;
+    top: -50px;
+    left: -25px;
+}
+#liberty {
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    width: 100px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: relative;
+}
+#liberty_img {
+    width: 30%;
+}
+#liberty_message {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+#flag_message {
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    font-size: 24px;
+}
+#freedom {
+    display: inline-block;
+    width: 50%;
+}
+#part {
+    display: flex;
+    flex-direction: row;
+}
+#q2 {
+    display: none;
+}
+#q3 {
+    display: none;
+}
+#q4 {
+    display: none;
+}
+#freedom_example {
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#q5 {
+    display: none;
+}
+#product_name, #product_date {
+    display: inline-block
+}
+#freedom2 {
+    display: none;
+    margin: 200px;
+}
+#freedom_gallery {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.freedom-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto; 
+    padding: 10px;
+}
+
+.freedom-list img {
+    height: 500px;  
+    width: 500px;
+
+}
+
+#freedom2_explanation {
+    margin-top: -100px;
+}
+#freedom_reviews {
+    width: 100%;
+    max-width: 600px; 
+    height: 250px; 
+    overflow-y: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px auto;
+    background: #f9f9f9; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 200px;
+}
+
+.review {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    margin-bottom: 8px;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review strong {
+    display: inline-block;
+    width: 80px;
+}
+/* === Minimal mobile-friendly additions === */
+
+/* Prevent horizontal overflow and let container adapt to screen size */
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  max-width: 100vw;
+  padding-left: 1rem;  /* prevent content touching screen edges */
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+/* Flex container should wrap on small screens to prevent overflow */
+#part {
+  flex-wrap: wrap;
+  justify-content: center; /* center on small screens, optional */
+}
+
+/* Make #liberty responsive by overriding large fixed margins and widths */
+#liberty {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  max-width: 350px; /* max width for readability */
+  flex: 1 1 100%; /* allow shrinking and stacking */
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+/* Make liberty image scale to container */
+#liberty_img {
+  width: 100% !important;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Adjust #flag position and message on small screens */
+#flag {
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  padding: 1rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Adjust absolute element #flag_message to flow naturally */
+#flag_message {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  font-size: 1rem !important;
+  margin-top: 1rem;
+}
+
+/* Make #freedom block adapt to container width */
+#freedom {
+  width: 100% !important;
+  max-width: 600px;
+  margin: 1rem auto;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+/* Allow large images in gallery to scale down */
+.freedom-list img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-height: 300px; /* reduce height on mobile */
+}
+
+/* Adjust freedom_reviews container */
+#freedom_reviews {
+  max-width: 100% !important;
+  height: 300px !important;
+  margin: 1rem auto !important;
+  padding: 1rem !important;
+  box-sizing: border-box !important;
+  overflow-y: auto !important;
+}
+
+/* Adjust margins on frequently large margin elements */
+#freedom_example {
+  margin: 2rem 1rem !important;
+}
+
+#freedom2_explanation {
+  margin-top: 1rem !important;
+}
+
+#freedom2 {
+  margin: 1rem !important;
+}
+
+/* Show hidden sections as block if needed (optional) */
+
+/* Media Query for screens less than 768px width */
+@media (max-width: 768px) {
+  #part {
+    flex-direction: column;
+    align-items: center;
+  }
+  #liberty, #freedom {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0.5rem 0 !important;
+  }
+  #flag_message {
+    font-size: 1rem !important;
+    left: auto !important;
+    top: auto !important;
+  }
+}
+

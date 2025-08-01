@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css_main.css">
+        <meta charset="UTF-8">
+        <title>Spy Test</title>
+    </head>
+    <body>
+        <div id="container">
+
+            <!-- First Welcome Screen -->
+            <div id="first_welcome">
+                <h1>Welcome to this site. You’ll either regret opening it… or really regret opening it.</h1>
+                <button id="first_entry_button">Open</button>
+            </div>
+
+            <!-- Entry Screen -->
+            <div id="entry" style="display:none;">
+                <h1>Let’s see if you can pass a test to become a spy.</h1>
+                <label for="name_input">Tell me, what is your name?</label>
+                <input name="name" type="text" placeholder="John Smith" id="name_input">
+                <button id="name">Enter</button>
+                <p id="name_result"></p>
+            </div>
+
+            <!-- Fact Screen -->
+            <div id="fact" style="display:none;">
+                <h2>
+                    Here’s an unrelated fact: once upon a time, the U.S. actually had a $10,000 bill. 
+                    Yes, ten thousand in a single note. It was banned in 1969 because the government decided 
+                    criminals shouldn’t be able to carry my entire net worth folded neatly in a shirt pocket. 
+                    Instead, they wanted them to carry a suitcase — boosting suitcase sales and creating jobs 
+                    so workers could have the freedom to buy food. 
+                    Anyways — haha, pain.
+                </h2>
+                <button id="second_next">Next</button>
+            </div>
+
+            <!-- Four Nations Screen -->
+            <div id="four_nation" style="display:none;">
+                <h2 id="message">
+                    The last time I was caged was before my birth. 
+                    So I thought it’s time to visit a jail again — and I designed some go‑to‑jail tickets.
+                </h2>
+                <button onclick="window.open('usa.html', '_blank')">U.S.A</button>
+                <button onclick="window.open('india.html', '_blank')">India</button>
+                <button id="china" onclick="window.open('china.html', '_blank')">China</button>
+                <button id="taiwan" >Taiwan</button>
+                <button id="russia" >Russia</button>
+                <button id="to_unemployed" >Next</button>
+                <p id="russia_des"></p>
+            </div>
+
+
+            <div id="unemployed">
+                <h2 id="unemployed_message">
+                 You probably don’t know this, but there’s a tragic epidemic in the world right now: unemployed people with Computer Science degrees. <br>
+And the worst part? Instead of curing cancer or inventing flying cars, we spend our days stealing Wi‑Fi from the neighbor’s router named “TP‑Link_420”, just so we can build ugly little websites on decade‑old laptops that sound like jet engines when they open Chrome.<br>
+
+These sites? Oh, they’re masterpieces of garbage. Default blue buttons straight out of 2002. Fonts so bad they make Comic Sans look classy. Content? Nonexistent — unless you count making fun of powerful countries as a career move. <br>
+
+We write paragraphs that are too long, too stupid, and so pointless that even ChatGPT would reply with: “Bro, I got nothing.” <br>
+And yet… here you are. Reading this train wreck of a page. So I guess the joke’s on you.
+                </h2>
+                <button id="feared_people">Next</button>
+            </div>
+
+            <div id="people">
+                <h2 id="heading">These are some entities that you should really fear from</h2>
+                <ol>
+                    <li>Unemployed CSE Majors</li>
+                    <li>Rejected Art Students </li>
+                    <li>Teddy Bear Who Give 84‑Minute Speeches After Being Shot</li>
+                    <li>Your Dad</li>
+                    <li>People Who Say "Trust Me, Bro"</li>
+                    <li>Anyone Who Starts a Sentence With "Back in My Day" </li>
+                    <li>I can't take his name directly, but he is related to a Boeing 767-200</li>
+                    <li>...and at last, that motherf*cker who forgot to remove the unemployment‑disguised, empathy‑gaining paragraph even after clicking the Next button — and you guys didn’t even notice the change in pattern.
+</ol>
+                    <button id="last_page">Next</button>
+            </div>
+            <div id="sob_story">
+                <h2>I NEED HELP!!!!!!</h2>
+    <p>
+    I know, I know — asking strangers on the internet for money is the oldest scam in the book.  
+    You’ve probably seen dozens of pop‑ups, donation pleas, and teary‑eyed videos telling you why  
+    someone you’ve never met deserves a piece of your wallet.  
+    That’s exactly why I didn’t start this page that way.  
+    I didn’t want you to click away in the first five seconds thinking,  
+    “Oh great, another pity party.” Instead, I tried to make you laugh.  
+    I wanted you to read the jokes, click the dumb buttons,  
+    roll your eyes at the satire, and maybe even mutter,  
+    “Okay, that was kinda funny.”  
+    Because if I could make you laugh even once — just once —  
+    maybe, deep down, you’d feel I had earned the price of a coffee,  
+    or even just a single dollar.  
+</p>
+
+<p>
+    The truth is, I never wanted to write this part.  
+    I argued with myself over and over:  
+    “Don’t beg. Don’t make it weird. Keep it light, keep it funny.”  
+    But life has a way of forcing you into corners you don’t want to be in.  
+    When you’re desperate, pride becomes a luxury you simply can’t afford.  
+    My younger sibling has been fighting a rare disease for years now,  
+    the kind of battle that makes every day feel like a coin toss  
+    between hope and heartbreak.  
+    The hospital bills don’t just add up — they tower.  
+    They come faster than I can pay,  
+    like waves crashing before you’ve caught your breath from the last one.  
+    And each envelope feels heavier than the one before.  
+    So I distract myself with jokes —  
+    about freedom, politics, and unemployed CSE majors —  
+    because it’s easier to laugh at the absurd  
+    than admit I cry myself to sleep wondering  
+    how I’ll manage tomorrow.  
+</p>
+
+<p>
+    So, here I am. Not a comedian. Not a web developer.  
+    Not some influencer with millions of followers ready to share a GoFundMe link.  
+    Just a scared human being on the internet,  
+    sitting behind an old laptop that sounds like it’s preparing for liftoff  
+    every time I open Chrome.  
+    I don’t want to guilt you — I just want you to know I’m trying.  
+    Even a single dollar could make a real difference in my sibling’s treatment.  
+    Even a click means that someone out there saw me,  
+    that I wasn’t just screaming into the void.  
+    I’m not asking for a miracle.  
+    I’m not expecting anyone to swoop in and save everything.  
+    I’m only asking for a little faith, a little kindness —  
+    the kind you’d give a stranger on the street if you knew their story  
+    but never their name.  
+</p>
+
+<p>
+    Please — if you laughed at my jokes,  
+    if you smirked at even one dumb line,  
+    or if you simply stayed on this site longer than you expected to,  
+    consider this my one and only serious request here.  
+    I don’t want to remember this page as a joke.  
+    I want to remember it as the day a stranger cared enough to help.  
+</p>
+
+<p>
+    Below is a button. Click it if you want to help.  
+    I’ll be forever grateful.  
+    Maybe someday, when things are better,  
+    I’ll come back and rewrite this whole site  
+    not as a cry for help, but as a thank‑you note  
+    to the people who cared when it mattered most.  
+    Until then, all I can offer you is my humor,  
+    my honesty, and this little piece of my story.  
+</p>
+
+    <button onclick="window.open('goodbye.mp4')">
+        Help My Sibling
+    </button>
+</div>
+
+
+        </div>
+        <script src="js_main.js"></script>
+    </body>
+</html>

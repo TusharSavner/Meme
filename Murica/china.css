@@ -1,0 +1,35 @@
+h1 {
+    color: red;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 26px;
+}
+h2 {
+    top: 50%;
+    position: absolute;
+}
+/* Prevent overflow and ensure the absolute positioned elements adjust well on small screens */
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Ensure the transforms and absolute positioning don’t push content offscreen */
+@media (max-width: 480px) {
+  h1, h2 {
+    max-width: 90vw;    /* Let text wrap inside viewport with some padding */
+    left: 50%;
+    transform: translateX(-50%);
+    word-break: break-word; /* Break long words to prevent overflow */
+    font-size: 5vw;     /* Scale font size to viewport width without changing base size logic */
+  }
+  h2 {
+    top: 55%;          /* Slight adjustment from 50% to avoid overlap on smaller screens */
+  }
+}
