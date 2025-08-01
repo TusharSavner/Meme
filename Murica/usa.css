@@ -1,114 +1,156 @@
+/* Reset & base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    overflow-x: hidden;
+}
 
+/* Container */
+#container {
+    padding: 20px;
+}
+
+/* Flag section */
 #flag {
-    position: relative;
-    top: -50px;
-    left: -25px;
+    text-align: center;
+    margin-bottom: 30px;
 }
-#liberty {
-    margin-left: 100px;
-    margin-right: 100px;
-    position: relative;
-    width: 100px;
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    position: relative;
-}
-#liberty_img {
-    width: 30%;
-}
-#liberty_message {
-    position: relative;
-    width: 100%;
-    display: inline-block;
+#flag img {
+    max-width: 100%;
+    height: auto;
 }
 #flag_message {
-    position: absolute;
-    top: 250px;
-    left: 700px;
-    font-size: 24px;
-}
-#freedom {
-    display: inline-block;
-    width: 50%;
-}
-#part {
-    display: flex;
-    flex-direction: row;
-}
-#q2 {
-    display: none;
-}
-#q3 {
-    display: none;
-}
-#q4 {
-    display: none;
-}
-#freedom_example {
-    margin-top: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-#q5 {
-    display: none;
-}
-#product_name, #product_date {
-    display: inline-block
-}
-#freedom2 {
-    display: none;
-    margin: 200px;
-}
-#freedom_gallery {
-    text-align: center;
-    margin: 20px auto;
+    font-size: 20px;
+    margin-top: 15px;
+    position: static; /* remove absolute for responsiveness */
 }
 
+/* Liberty section */
+#part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+#liberty {
+    width: 100%;
+    max-width: 300px;
+}
+#liberty_img {
+    width: 100%;
+    height: auto;
+}
+#liberty_message {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Freedom section */
+#freedom {
+    flex: 1;
+    min-width: 280px;
+    max-width: 700px;
+    text-align: left;
+}
+#freedom_explaination,
+#freedom_continue {
+    font-size: 16px;
+}
+
+/* Freedom Example */
+#freedom_example {
+    margin: 50px auto;
+    max-width: 90%;
+}
+#freedom_example_heading {
+    font-size: 20px;
+}
+#freedom_example button {
+    margin: 5px;
+    padding: 8px 15px;
+}
+
+/* Freedom 2 section */
+#freedom2 {
+    margin: 50px auto;
+    max-width: 95%;
+}
+#product_name, #product_date {
+    margin: 10px;
+}
+
+/* Freedom gallery */
+#freedom_gallery {
+    margin: 20px auto;
+}
 .freedom-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
-    overflow-x: auto; 
-    padding: 10px;
 }
-
 .freedom-list img {
-    height: 500px;  
-    width: 500px;
-
-}
-
-#freedom2_explanation {
-    margin-top: -100px;
-}
-#freedom_reviews {
     width: 100%;
-    max-width: 600px; 
-    height: 250px; 
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Reviews */
+#freedom_reviews {
+    width: 95%;
+    max-width: 600px;
+    height: auto;
+    max-height: 350px;
     overflow-y: auto;
     border: 1px solid black;
-    padding: 10px;
+    padding: 15px;
     margin: 20px auto;
-    background: #f9f9f9; 
-    font-family: Arial, sans-serif;
+    background: #f9f9f9;
     font-size: 14px;
-    margin: 200px;
 }
-
 .review {
     border-bottom: 1px solid #ccc;
     padding: 8px 0;
-    margin-bottom: 8px;
 }
-
 .review:last-child {
     border-bottom: none;
 }
 
-.review strong {
-    display: inline-block;
-    width: 80px;
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    #flag_message {
+        font-size: 18px;
+    }
+    #freedom_explaination,
+    #freedom_continue {
+        font-size: 14px;
+    }
+    #freedom_example_heading {
+        font-size: 18px;
+    }
+    .freedom-list img {
+        max-width: 90%;
+    }
 }
 
+@media (max-width: 480px) {
+    #flag_message {
+        font-size: 16px;
+    }
+    #freedom_explaination,
+    #freedom_continue {
+        font-size: 13px;
+    }
+    #freedom_example_heading {
+        font-size: 16px;
+    }
+    #freedom_example button {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
