@@ -1,12 +1,53 @@
+/* Reset default margins */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Full-page container */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main heading */
 h1 {
     color: red;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%);
     font-size: 26px;
+    margin-bottom: 20px;
 }
+
+/* Subheading */
 h2 {
-    top: 50%;
-    position: absolute;
+    font-size: 18px;
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 16px;
+        max-width: 90%;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 14px;
+        max-width: 95%;
+    }
 }
