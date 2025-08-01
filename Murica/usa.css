@@ -1,127 +1,114 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
 
-#container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Flag Section */
 #flag {
-    text-align: center;
-    margin-bottom: 20px;
+    position: relative;
+    top: -50px;
+    left: -25px;
 }
-#flag img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
-#flag_message {
-    font-size: 20px;
-    margin-top: 15px;
-}
-
-/* Liberty + Freedom Section */
-#part {
+#liberty {
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    width: 100px;
+    display: inline-block;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 20px 0;
-}
-#liberty, #freedom {
-    flex: 1 1 300px;
+    flex-direction: column;
+    width: 30%;
+    position: relative;
 }
 #liberty_img {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
+    width: 30%;
 }
 #liberty_message {
-    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
 }
-
-/* Freedom Example */
-#freedom_example {
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 900px;
+#flag_message {
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    font-size: 24px;
 }
-button {
-    margin: 5px;
-    padding: 8px 16px;
-    cursor: pointer;
+#freedom {
+    display: inline-block;
+    width: 50%;
 }
-
-/* Freedom 2 Section */
-#freedom2 {
+#part {
+    display: flex;
+    flex-direction: row;
+}
+#q2 {
     display: none;
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 1000px;
+}
+#q3 {
+    display: none;
+}
+#q4 {
+    display: none;
+}
+#freedom_example {
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#q5 {
+    display: none;
 }
 #product_name, #product_date {
-    display: inline-block;
-    margin: 0 5px;
+    display: inline-block
+}
+#freedom2 {
+    display: none;
+    margin: 200px;
+}
+#freedom_gallery {
+    text-align: center;
+    margin: 20px auto;
 }
 
-/* Gallery */
 .freedom-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-}
-.freedom-list img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border: 2px solid black;
+    overflow-x: auto; 
+    padding: 10px;
 }
 
-/* Reviews */
+.freedom-list img {
+    height: 500px;  
+    width: 500px;
+
+}
+
+#freedom2_explanation {
+    margin-top: -100px;
+}
 #freedom_reviews {
     width: 100%;
-    max-width: 700px;
-    height: auto;
-    max-height: 400px;
+    max-width: 600px; 
+    height: 250px; 
     overflow-y: auto;
     border: 1px solid black;
-    padding: 15px;
-    margin: 30px auto;
-    background: #f9f9f9;
+    padding: 10px;
+    margin: 20px auto;
+    background: #f9f9f9; 
+    font-family: Arial, sans-serif;
     font-size: 14px;
+    margin: 200px;
 }
+
 .review {
     border-bottom: 1px solid #ccc;
     padding: 8px 0;
+    margin-bottom: 8px;
 }
+
 .review:last-child {
     border-bottom: none;
 }
 
-/* Responsive Text Adjustments */
-@media (max-width: 768px) {
-    #flag_message {
-        font-size: 16px;
-    }
-    #freedom_example h1 {
-        font-size: 20px;
-    }
+.review strong {
+    display: inline-block;
+    width: 80px;
 }
 
-@media (max-width: 500px) {
-    #container {
-        padding: 10px;
-    }
-    #flag img {
-        max-width: 250px;
-    }
-    button {
-        width: 100%;
-        max-width: 200px;
-    }
-}
