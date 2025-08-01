@@ -3,28 +3,23 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.5;
+    line-height: 1.4;
     text-align: center;
     overflow-x: hidden;
 }
 
 /* Container */
 #container {
-    padding: 10px;
+    padding: 0;
 }
 
 /* Flag section */
 #flag {
     text-align: center;
-    margin-bottom: 20px;
 }
 #flag img {
     max-width: 100%;
     height: auto;
-}
-#flag_message {
-    font-size: 18px;
-    margin-top: 10px;
 }
 
 /* Liberty section */
@@ -32,8 +27,6 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin: 10px auto;
 }
 #liberty {
     width: 100%;
@@ -43,10 +36,6 @@ body, html {
     width: 100%;
     height: auto;
 }
-#liberty_message {
-    font-size: 14px;
-    margin-top: 5px;
-}
 
 /* Freedom section */
 #freedom {
@@ -55,89 +44,52 @@ body, html {
     max-width: 700px;
     text-align: left;
 }
-#freedom_explaination,
-#freedom_continue {
-    font-size: 14px;
-}
 
 /* Freedom Example */
 #freedom_example {
-    margin: 20px auto;
     max-width: 95%;
-}
-#freedom_example_heading {
-    font-size: 18px;
+    margin: auto;
 }
 #freedom_example button {
-    margin: 5px;
-    padding: 6px 12px;
-    font-size: 14px;
+    display: inline-block;
 }
 
 /* Freedom 2 section */
 #freedom2 {
-    margin: 20px auto;
     max-width: 95%;
-}
-#product_name, #product_date {
-    margin: 5px;
+    margin: auto;
 }
 
 /* Freedom gallery */
-#freedom_gallery {
-    margin: 10px auto;
-}
 .freedom-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
 }
 .freedom-list img {
     width: 100%;
-    max-width: 350px;
     height: auto;
+    max-width: 350px;
 }
 
 /* Reviews */
 #freedom_reviews {
     width: 95%;
     max-width: 600px;
-    margin: 15px auto;
-    font-size: 13px;
+    margin: auto;
     overflow-y: auto;
 }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-    #flag_message {
-        font-size: 16px;
-    }
-    #freedom_explaination,
-    #freedom_continue {
-        font-size: 13px;
-    }
-    #freedom_example_heading {
-        font-size: 16px;
-    }
     .freedom-list img {
         max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    #flag_message {
-        font-size: 14px;
-    }
-    #freedom_explaination,
-    #freedom_continue {
-        font-size: 12px;
-    }
-    #freedom_example_heading {
-        font-size: 14px;
-    }
     #freedom_example button {
-        font-size: 12px;
-        padding: 5px 10px;
+        display: block;
+        margin: auto;
     }
 }
