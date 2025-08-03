@@ -1,0 +1,85 @@
+/* Background and text */
+body {
+    background-color: lightpink;
+    color: red;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Basic layout to space the sections */
+#container > div {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Buttons container - horizontal layout, fixed height */
+.buttons {
+    display: inline-flex;       /* inline-flex to keep width to content */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;                 /* space between buttons */
+    height: 50px;              /* fixed height to avoid vertical shift */
+}
+
+/* Base button styles */
+button {
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;               /* fixed height */
+    line-height: 50px;          /* vertically center text */
+    padding: 0 20px;            /* button width can grow horizontally */
+    white-space: nowrap;        /* prevent text wrap */
+    transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+/* Specific No buttons - red */
+#date,   /* No button on intro */
+#q_no    /* No button in said_sorry */
+{
+    background-color: red;
+}
+
+#date:hover,
+#q_no:hover {
+    background-color: darkred;
+}
+
+/* All other buttons (non No) - green */
+button:not(#date):not(#q_no) {
+    background-color: green;
+}
+
+button:not(#date):not(#q_no):hover {
+    background-color: darkgreen;
+}
+
+/* Images - natural size, max width 100% for container fit */
+#container img {
+    display: block;
+    margin: 20px auto 0 auto;  /* center horizontally, margin top */
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255,0,0,0.5);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Initially hide these sections */
+#No_reply,
+#said_sorry,
+#larry,
+#final,
+#final2,
+#goodbye {
+    display: none;
+}
