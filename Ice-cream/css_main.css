@@ -1,0 +1,183 @@
+body {
+    background-color: lightpink;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#donald_trump,
+#space {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#intro {
+    top: 100px;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+h1, h2 {
+    color: red;
+    margin: 10px 0;
+}
+
+#ok {
+    height: 34px;
+    width: 128px;
+    border: 1px solid red;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    background: none;
+    cursor: pointer;
+}
+#ok:hover {
+    background-color: pink;
+    transform: scale(1.1);
+    box-shadow: 0 0 12px red;
+}
+#ok:active {
+    background-color: pink;
+    transform: scale(0.9);
+    box-shadow: 0 0 12px red;
+}
+
+.q_a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 20%;
+    position: relative;
+    z-index: 99;
+    text-align: center;
+}
+
+#q1, #q2, #q3, #q4, #q5, #q6,
+#r1, #r2, #r3, #r4, #r5, #r6 {
+    display: none;
+}
+
+#pfp {
+    display: none;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+}
+
+.pfp {
+    border: 1px solid red;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+.pfp:hover {
+    background-color: pink;
+    transform: scale(1.1);
+    box-shadow: 0 0 12px red;
+}
+.pfp:active {
+    background-color: pink;
+    transform: scale(0.9);
+    box-shadow: 0 0 12px red;
+}
+
+#scoreboard {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+}
+
+#players {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+#you_pfp, #me_pfp {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.no, .next {
+    background-color: green;
+    color: white;
+    height: 34px;
+    width: 128px;
+    border: 1px solid green;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+.no:hover, .next:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px green;
+}
+.no:active, .next:active {
+    background-color: lightgreen;
+    transform: scale(0.9);
+    box-shadow: 0 0 12px green;
+}
+
+.yes {
+    background-color: red;
+    color: white;
+    height: 34px;
+    width: 128px;
+    border: 1px solid red;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+.yes:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px red;
+}
+.yes:active {
+    background-color: pink;
+    transform: scale(0.9);
+    box-shadow: 0 0 12px red;
+}
+
+#after_defate {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+#if_yes,
+#if_no,
+#defated {
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}

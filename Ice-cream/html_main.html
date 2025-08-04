@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css_main.css">
+    </head>
+    <body>
+        <div id="container">
+
+            <div id="intro">
+                <h1 id="intro_h">You vs Me — the loser buys the winner an ice cream.</h1>
+                <button id="ok">Let’s Go!</button>
+            </div>
+
+            <div id="main">
+
+                <div id="pfp">
+                    <h1 id="pfp_h">Choose your profile picture</h1>
+
+                    <div id="pfp_options">
+                        <button id="first_pfp" class="pfp"><img src="cat1.jpg"></button>
+                        <button id="second_pfp" class="pfp"><img src="dragon.jpg"></button>
+                        <button id="third_pfp" class="pfp"><img src="cool.jpg"></button>
+                        <button id="forth_pfp" class="pfp"><img src="cute.jpg"></button>
+                        <button id="fifth_pfp" class="pfp"><img src="german.jpeg"></button>
+                        <button id="sixth_pfp" class="pfp"><img src="banana.jpg"></button>
+                    </div>
+
+                    <h2 id="pfp_warnings"></h2>
+                </div> 
+
+                <div id="quiz">
+                    <div id="q1" class="q_a">
+                        <h1 id="q1_text">1. Is your name Tushar?</h1>
+                        <div class="buttons">
+                            <button id="q1_yes" class="yes">Yes</button>
+                            <button id="q1_no" class="no">No</button>
+                        </div>
+                    </div>
+
+                    <div id="r1" class="q_a">
+                        <h1 id="r1_text">Haha! I win — my name is better than yours.</h1>
+                        <div class="buttons">
+                            <button id="q1_next" class="next">Next</button>
+                        </div>
+                    </div>
+
+                    <div id="q2" class="q_a">
+                        <h1 id="q2_text">2. Do you have ADHD with OCD, a bit of Imposter Syndrome, and a dash of a Superiority Complex?</h1>
+                        <div class="buttons">
+                            <button id="q2_yes" class="yes">Yes</button>
+                            <button id="q2_no" class="no">No</button>
+                        </div>
+                    </div>
+
+                    <div id="r2" class="q_a">
+                        <h1 id="r2_text">Haha! I have all of them. My doctor confirmed it — so I win again.</h1>
+                        <div class="buttons">
+                            <button id="q2_next" class="next">Next</button>
+                        </div>
+                    </div>
+
+                    <div id="q3" class="q_a">
+                        <h1 id="q3_text">3. Can you prove you ever met Donald Trump?</h1>
+                        <div class="buttons">
+                            <button id="q3_yes" class="yes">Yes</button>
+                            <button id="q3_no" class="no">No</button>
+                        </div>
+                    </div>
+
+                    <div id="r3" class="q_a">
+                        <h1 id="r3_text">I can prove it! This picture is the evidence — I win again.</h1>
+                        <figure>
+                            <img id="donald_trump" src="donald.png">
+                            <figcaption>edited_in_photoshop_2007</figcaption>
+                        </figure>
+                        <div class="buttons">
+                            <button id="q3_next" class="next">Next</button>
+                        </div>
+                    </div>
+
+                    <div id="q4" class="q_a">
+                        <h1 id="q4_text">4. Do you have enough confidence to post a stupid meme site in a class group chat without worrying everyone will laugh at you?</h1>
+                        <div class="buttons">
+                            <button id="q4_yes" class="yes">Yes</button>
+                            <button id="q4_no" class="no">No</button>
+                        </div>
+                    </div>
+
+                    <div id="r4" class="q_a">
+                        <h1 id="r4_text">Haha! I already did it. Another win for me.</h1>
+                        <div class="buttons">
+                            <button id="q4_next" class="next">Next</button>
+                        </div>
+                    </div>
+
+                    <div id="q5" class="q_a">
+                        <h1 id="q5_text">5. Are you a master of Quantum Physics?</h1>
+                        <div class="buttons">
+                            <button id="q5_yes" class="yes">Yes</button>
+                            <button id="q5_no" class="no">No</button>
+                        </div>
+                    </div>
+
+                    <div id="r5" class="q_a">
+                        <h1 id="r5_text">Neither am I, but I still get the point — because I own this site. Long live corruption!</h1>
+                        <div class="buttons">
+                            <button id="q5_next" class="next">Next</button>
+                        </div>
+                    </div>
+
+                    <div id="q6" class="q_a">
+                        <h1 id="q6_text">6. Are you the first unemployed CSE major to land on the moon?</h1>
+                        <div class="buttons">
+                            <button id="q6_yes" class="yes">Yes</button>
+                            <button id="q6_no" class="no">No</button>
+                        </div>
+                    </div>
+
+                    <div id="r6" class="q_a">
+                        <h1 id="r6_text">That’s me! You lost again — here’s the proof.</h1>
+                        <figure>
+                            <img id="space" src="space.png">
+                            <figcaption>edited_in_photoshop_2007</figcaption>
+                        </figure>
+                        <div class="buttons">
+                            <button id="q6_next" class="next">Next</button>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="scoreboard">
+                    <div id="players">
+                        <div id="you">
+                            <img id="you_pfp" src="banana.jpg">
+                            <h2 id="you_score">Your Score: 0</h2>
+                        </div>
+                        <div id="me">
+                            <img id="me_pfp" src="cat1.jpg">
+                            <h2 id="me_score">My Score: 0</h2>
+                        </div>
+                    </div>
+                </div> 
+
+                <div id="after_defate">
+                    <div id="defated">
+                        <h1 id="defated_text">I’ve got 6 points and you have zero. That officially proves my IQ is higher than yours. As per our bet, it’s time to pick an ice cream to treat me!</h1>
+                        <h2 id="defated_q">So, are you ready to buy me that ice cream?</h2>
+                        <div class="buttons">
+                            <button id="q7_yes" class="yes">Yes</button>
+                            <button id="q7_no" class="no">No</button>
+                        </div>
+                    </div>
+
+                    <div id="if_yes">
+                        <h2 id="yes_text">Awwww, thank you so much! Forgive me for thinking of you as a <em>low-IQ idiot</em> who couldn’t even score a point against me — <em>a pathetic genius</em>. But I love ice creams and the person who feeds me one.</h2>
+                        <button class="next" onclick="forget()">Leave</button>
+                    </div>
+
+                    <div id="if_no">
+                        <h2 id="no_text">Please, pookie — feed me one. This program took over 578 lines of code, and you’re rejecting my cute offer just like Harvard twice rejected my clown job application?? Don’t you know what happened with that one rejected art student??</h2>
+                    </div>
+                </div>
+
+            </div>
+
+        <script src="js_main.js"></script>
+    </body>
+</html>
